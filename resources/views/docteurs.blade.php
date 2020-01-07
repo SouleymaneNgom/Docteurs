@@ -94,7 +94,7 @@
 													<li><a href="maladies">Maladies</a></li>
 													<li><a href="contact">Contact</a></li>
 													<li><a href="dondesang">Don-De-Sang</a></li>
-													<li><a href="docteurs">docteurs</a></li>
+													<li><a href="docteurs">Rendez-Vous</a></li>
 												
 												</ul>
 											</nav>

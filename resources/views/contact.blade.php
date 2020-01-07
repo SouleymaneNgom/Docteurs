@@ -90,11 +90,15 @@
 													<li><a href="Maladies">Maladies</a></li>
 													<li><a href="contact">Contact</a></li>
 													<li><a href="dondesang">Don-De-Sang</a></li>
-													<li class="active"><a href="docteurs">docteurs</a></li>
+													<li><a href="docteurs">Rendez-Vous</a></li>
 												
 												</ul>
 											</nav>
 											<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
+											<style>
+												.search_container_form{
+													margin-right: -40px;
+												</style>
 												<form action="#" id="search_container_form" class="search_container_form">
 													<input type="text" class="search_container_input" placeholder="Search" required="required">
 													<button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -135,10 +139,9 @@
 						<div class="contact_title">Entrer en Contact</div>
 						<div class="contact_form_container">
 							<form action="#" id="contact_form" class="contact_form">
-								<input type="text" id="contact_input" class="contact_input" placeholder="Votre Nom" required="required">
-								<input type="email" id="contact_email" class="contact_input" placeholder="Votre E-mail" required="required">
-								<input type="text" id="contact_subject" class="contact_input" placeholder="Matière" required="required">
-								<textarea class="contact_input contact_textarea" id="contact_textarea" placeholder="Message" required="required"></textarea>
+								<input type="text" id="contact_input" class="contact_input" placeholder="Votre Nom" name="name" required="required">
+								<input type="email" id="contact_email" class="contact_input" placeholder="Votre E-mail" name="email" required="required">
+								<textarea class="contact_input contact_textarea" id="contact_textarea" placeholder="Message"  name="message" required="required"></textarea>
 								<button class="contact_button" id="contact_button">Envoyer message</button>
 							</form>
 						</div>

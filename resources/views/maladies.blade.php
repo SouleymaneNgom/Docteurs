@@ -93,11 +93,15 @@
 													<li class="active"><a href="maladies">Maladies</a></li>
 													<li><a href="contact">Contact</a></li>
 													<li><a href="dondesang">Don-De-Sang</a></li>
-													<li><a href="docteurs">Docteurs</a></li>
+													<li><a href="docteurs">Rendez-Vous</a></li>
 													
 												</ul>
 											</nav>
 											<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
+											<style>
+												.search_container_form{
+													margin-right: -40px;
+												</style>
 												<form action="#" id="search_container_form" class="search_container_form">
 													<input type="text" class="search_container_input" placeholder="Search" required="required">
 													<button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>

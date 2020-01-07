@@ -19,6 +19,7 @@ Route::get('/maladies','maladiesController@showmaladies');
 Route::get('/hopitaux','HopitauxController@showHopitaux');
 Route::get('/docteurs','DocteurController@showDocteur');
 Route::get('/contact','ContactController@showContact');
+Route::post('/contact','ContactController@mailToAdmin');
 Route::get('/dondesang','dondesangController@showdondesang');
 Auth::routes();
 

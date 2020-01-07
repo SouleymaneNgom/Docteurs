@@ -52,7 +52,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="background_image" style="background-image:url(images/garde.jpg)"></div>
+		<div class="background_image" style="background-image:url(images/page.jpg)"></div>
 
 		<!-- Header -->
 
@@ -93,13 +93,17 @@
 													<li><a href="maladies">Maladies</a></li>
 													<li><a href="contact">Contact</a></li>
 													<li><a href="dondesang">Don-De-Sang</a></li>
-													<li><a href="docteurs">docteurs</a></li>
+													<li><a href="docteurs">Rendez-Vous</a></li>
 													
 												</ul>
 											</nav>
 											<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto" >
+											<style>
+												.search_container_form{
+													margin-right: -40px;
+												</style>
 												<form action="#" id="search_container_form" class="search_container_form">
-													<input type="text" class="search_container_input" placeholder="Search" required="required">
+													<input  type="text" class="search_container_input" placeholder="Search" required="required">
 													<button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>
 												</form>
 											</div>
@@ -118,7 +122,7 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content">
-							<div class="home_title" >Plateforme de Prise de Rendez Vous Médicaux</div>
+							<h1><font color="blue">Plateforme de Prise de Rendez Vous Médicaux</font></h1>
 							
 						</div>
 					</div>
