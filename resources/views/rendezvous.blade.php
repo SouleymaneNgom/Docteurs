@@ -28,13 +28,12 @@
 				<button class="menu_search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
 			</form>
 			<ul>
-				<li class="menu_item"><a href="index">Accueil</a></li>
+			<li class="menu_item"><a href="index">Accueil</a></li>
 				<li class="menu_item"><a href="hopitaux">Hopitaux</a></li>
-				<li class="menu_item"><a href="Maladies">Maladies</a></li>
-				<li class="menu_item"><a href="docteurs">Docteurs</a></li>
+				<li class="menu_item"><a href="maladies">Maladies</a></li>
+				<li class="menu_item"><a href="dondesang">Don-De-Sang</a></li>
 				<li class="menu_item"><a href="contact">Contact</a></li>
 				<li class="menu_item"><a href="rendezvous">Rendez-Vous</a></li>
-				
 			</ul>
 		</div>
 		<div class="menu_social">
@@ -94,7 +93,7 @@
 													<li><a href="maladies">Maladies</a></li>
 													<li><a href="contact">Contact</a></li>
 													<li><a href="dondesang">Don-De-Sang</a></li>
-													<li><a href="docteurs">docteurs</a></li>
+													<li><a href="docteurs">Rendez-Vous</a></li>
 												
 												</ul>
 											</nav>
@@ -153,7 +152,7 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content">
-							<div class="home_title">Docteurs</div>
+							<div class="home_title">Rendez-Vous</div>
 						</div>
 					</div>
 				</div>
@@ -376,7 +375,7 @@
 									<li><a href="maladies">Maladies</a></li>
 									<li><a href="contact">Contact</a></li>
 									<li><a href="dondesang">Don-De-Sang</a></li>
-									<li><a href="docteurs">Docteurs</a></li>
+									<li><a href="rendezvous">Rendez-Vous</a></li>
 								</ul>
 							</nav>
 							<div class="footer_links">

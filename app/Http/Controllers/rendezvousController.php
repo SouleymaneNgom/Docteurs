@@ -5,6 +5,6 @@ class DocteurController extends Controller{
 
     public function showDocteur()
     {
-        return view('docteurs');
+        return view('rendezvous');
     }
 }

@@ -29,13 +29,12 @@
 			</form>
 			
 			<ul>
-				<li class="menu_item"><a href="index">Accueil</a></li>
+			<li class="menu_item"><a href="index">Accueil</a></li>
 				<li class="menu_item"><a href="hopitaux">Hopitaux</a></li>
-				<li class="menu_item"><a href="Maladies">Maladies</a></li>
-				<li class="menu_item"><a href="docteurs">docteurs</a></li>
+				<li class="menu_item"><a href="maladies">Maladies</a></li>
+				<li class="menu_item"><a href="dondesang">Don-De-Sang</a></li>
 				<li class="menu_item"><a href="contact">Contact</a></li>
 				<li class="menu_item"><a href="rendezvous">Rendez-Vous</a></li>
-				
 			</ul>
 		</div>
 		<div class="menu_social">
@@ -97,11 +96,15 @@
 													<li><a href="maladies">Maladies</a></li>
 													<li><a href="contact">Contact</a></li>
 													<li><a href="dondesang">Don-De-Sang</a></li>
-													<li class="active"><a href="docteurs">docteurs</a></li>
+													<li><a href="docteurs">Rendez-Vous</a></li>
 													
 												</ul>
 											</nav>
 											<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
+											<style>
+												.search_container_form{
+													margin-right: -40px;
+												</style>
 												<form action="#" id="search_container_form" class="search_container_form">
 													<input type="text" class="search_container_input" placeholder="Search" required="required">
 													<button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -564,7 +567,7 @@
 									<li><a href="maladies">Maladies</a></li>
 									<li><a href="contact">Contact</a></li>
 									<li><a href="dondesang">Don-De-Sang</a></li>
-									<li><a href="docteurs">Docteurs</a></li>
+									<li><a href="rendezvous">Rendez-Vous</a></li>
 								</ul>
 							</nav>
 							<div class="footer_links">

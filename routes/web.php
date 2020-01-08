@@ -17,12 +17,13 @@ Route::get('/', function () {
 Route::get('/index','indexController@showIndex');
 Route::get('/maladies','maladiesController@showmaladies');
 Route::get('/hopitaux','HopitauxController@showHopitaux');
-Route::get('/docteurs','DocteurController@showDocteur');
+Route::get('/rendezvous','rendezvousController@showrendezvous');
 Route::get('/contact','ContactController@showContact');
+Route::post('/contact','ContactController@mailToAdmin');
 Route::get('/dondesang','dondesangController@showdondesang');
 Auth::routes();
 
-Route::get('/docteurs', 'HomeController@index')->name('docteurs');
+Route::get('/rendezvous', 'HomeController@index')->name('rendezvous');
 
 
 Auth::routes();
