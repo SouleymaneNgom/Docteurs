@@ -188,7 +188,7 @@ Selon Abdoulaye Diouf Sarr, ces échanges sont nécessaires "pour bien analyser 
 				<div class="col">
 					<div class="cta_container d-flex flex-xl-row flex-column align-items-xl-start align-items-center justify-content-xl-start justify-content-center">
 						<div class="cta_content text-xl-left text-center">
-							<div class="cta_title">Qui jouit d'une santé parfaite possède un trésor</div>
+							<div class="cta_title">Qui jouit d'une santé parfaite possède un trésor.</div>
 							<div class="cta_subtitle"></div>
 						</div>
 						<div class="button cta_button ml-xl-auto"><a href="https://www.mon-poeme.fr/citations-medecin/"><span>parole santé</span><span>parole santé</span></a></div>
