@@ -32,8 +32,8 @@
 			<li class="menu_item"><a href="index">Accueil</a></li>
 				<li class="menu_item"><a href="hopitaux">Hopitaux</a></li>
 				<li class="menu_item"><a href="maladies">Maladies</a></li>
-				<li class="menu_item"><a href="dondesang">Don-De-Sang</a></li>
 				<li class="menu_item"><a href="contact">Contact</a></li>
+				<li class="menu_item"><a href="dondesang">Don-De-Sang</a></li>
 				<li class="menu_item"><a href="rendezvous">Rendez-Vous</a></li>
 			</ul>
 		</div>
@@ -96,7 +96,7 @@
 													<li><a href="maladies">Maladies</a></li>
 													<li><a href="contact">Contact</a></li>
 													<li><a href="dondesang">Don-De-Sang</a></li>
-													<li><a href="docteurs">Rendez-Vous</a></li>
+													<li><a href="rendezvous">Rendez-Vous</a></li>
 													
 												</ul>
 											</nav>

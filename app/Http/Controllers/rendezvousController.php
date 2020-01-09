@@ -1,9 +1,9 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-class DocteurController extends Controller{
+class rendezvousController extends Controller{
 
-    public function showDocteur()
+    public function showrendezvous()
     {
         return view('rendezvous');
     }
