@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \Illuminate\Support\Facades\Schema::defaultStringLength(191);
+	    \Illuminate\Support\Facades\Schema::defaultStringLength(191);
+	    //Nous allons forcer le system a utiliser du https quand on est en production.
+	    if(config('app.env') === 'production'){
+	    	\URL::forceScheme('https');
+	    }
     }
 }

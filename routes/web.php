@@ -25,7 +25,7 @@ Auth::routes();
 
 Route::get('/docteurs', 'HomeController@index')->name('docteurs');
 
-
+Route::get('/rendezvous','HomeController@index');//j'ai ajoute cette ligne pour eviter les erreurs de redirection. Vous le modifiez pour qu'il pointe sur le bon controlleur.
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
