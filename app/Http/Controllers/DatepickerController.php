@@ -22,7 +22,7 @@ public function datePicker (Request $request)
     $datepicker->telephone=$request->get('telephone');
     $datepicker->date=$request->get('date');
     $datepicker->save();
-    return redirect('datepicker')->with('success', 'Un Message de Confirmation vous sera envoyé dans votre compte de meme que heures');
+    return redirect('datepicker')->with('success', 'Un Message de Confirmation vous sera envoyé dans votre téléphone');
 }
 
 }

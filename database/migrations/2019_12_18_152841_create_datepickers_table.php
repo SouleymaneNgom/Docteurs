@@ -16,7 +16,7 @@ class CreateDatepickersTable extends Migration
         Schema::create('datepickers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nom');
-            $table->date('date');
+            $table->dateTime('date');
             $table->string('prenom');
             $table->string('adresse');
             $table->string('email');
