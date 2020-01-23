@@ -17,7 +17,7 @@ class CreateDatepickersTable extends Migration
             $table->increments('id');
             $table->string('nom');
            // $table->date('date');
-           date("Y-m-d H:i:s", strtotime($request->input('date')));
+           //date("Y-m-d H:i:s", strtotime($request->input('date')));
             $table->string('prenom');
             $table->string('adresse');
             $table->string('email');
