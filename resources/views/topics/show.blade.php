@@ -83,7 +83,7 @@ function toggleReplyComment(id){
                 @enderror
 
             </div>
-            <button type="submit" class="btn btn-primary">Repondre a ce commentaire</button>
+            <button type="submit" class="btn btn-primary">repondre a ce commentaire</button>
             </form>
             @endauth
             @empty
@@ -101,7 +101,7 @@ function toggleReplyComment(id){
             @enderror
             </div>
             
-            <button type="submit" class="btn btn-primary  mt-3">Soumettre mon commentaire</button>
+            <button type="submit" class="btn btn-primary  mt-3">soumettre mon commentaire</button>
             </form>
            
         </div>
