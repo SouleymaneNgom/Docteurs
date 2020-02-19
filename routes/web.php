@@ -36,7 +36,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('datepicker','DatepickerController@create');
 Route::post('datepicker','DatepickerController@datePicker');
 
+<<<<<<< HEAD
 Route::get('showFromNotification/{topic}/{notification}', 'TopicController@showFromNotification')->name('topics.showFromNotification');
+=======
+>>>>>>> 85f90c5a62e12697e7db9f4ce3927e1567510187
 
 
 Route::resource('topics', 'TopicController'); 

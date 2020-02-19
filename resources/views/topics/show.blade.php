@@ -58,16 +58,42 @@ function toggleReplyComment(id){
             </div>
             </div>
             </div>
+<<<<<<< HEAD
+=======
+            @foreach($comment->comments as $replyComment)
+            <div class="card mb-2">
+                <div class="card-body">
+                
+                {{ $replyComment->content}}
+                <div class="d-flex justify-content-between align-items-center " >
+                <small>Poste le {{$replyComment->created_at->format('d/m/y')}}</small>
+                <span class="badge badge-primary">{{$replyComment->user->name}}</span>
+                </div>
+            </div>
+            </div>
+            @endforeach
+
+>>>>>>> 85f90c5a62e12697e7db9f4ce3927e1567510187
             @auth
             <button class="btn btn-info mb-3" onclick="toggleReplyComment({{$comment->id}})" >Repondre</button>
             <form action="{{route('comments.storeReply', $comment)}}" method="POST" class="mb-3 ml-5 d-none" id="replyComment-{{ $comment->id  }}">
             @csrf
             <div class="form-group">
                 <label for="replyCommen">Ma reponse</label>
+<<<<<<< HEAD
                 <textarea name="replyComment" class="form-control" id="replyComment" rows="5"></textarea>
 
             </div>
             <button type="submit" class="btn btn-primary">Repondre a ce commentaire</button>
+=======
+                <textarea name="replyComment" class="form-control @error('replyComment') is-invqlid @enderror" id="replyComment"  rows="5"></textarea>
+                @error('replyComment')
+                <div class="invalid-feedback">{{ $errors->first('replyComment') }}</div>
+                @enderror
+
+            </div>
+            <button type="submit" class="btn btn-primary">repondre a ce commentaire</button>
+>>>>>>> 85f90c5a62e12697e7db9f4ce3927e1567510187
             </form>
             @endauth
             @empty
@@ -85,7 +111,11 @@ function toggleReplyComment(id){
             @enderror
             </div>
             
+<<<<<<< HEAD
             <button type="submit" class="btn btn-primary  mt-3">Soumettre mon commentaire</button>
+=======
+            <button type="submit" class="btn btn-primary  mt-3">soumettre mon commentaire</button>
+>>>>>>> 85f90c5a62e12697e7db9f4ce3927e1567510187
             </form>
            
         </div>

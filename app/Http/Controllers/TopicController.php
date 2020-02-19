@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Topic;
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use Illuminate\Notifications\DatabaseNotification;
+=======
+>>>>>>> 85f90c5a62e12697e7db9f4ce3927e1567510187
 
 class TopicController extends Controller
 {
@@ -64,11 +67,14 @@ class TopicController extends Controller
     {
         return view('topics.show', compact('topic'));
     }
+<<<<<<< HEAD
     public function showFromNotification(Topic $topic, DatabaseNotification $notification){
 
         $notification->markAsRead();
         return view('topics.show', compact('topic'));
     }
+=======
+>>>>>>> 85f90c5a62e12697e7db9f4ce3927e1567510187
 
     /**
      * Show the form for editing the specified resource.
@@ -112,7 +118,11 @@ class TopicController extends Controller
      */
     public function destroy(Topic $topic)
     {
+<<<<<<< HEAD
         $this->authorize('delete',$topic);
+=======
+        $this->authorize('update',$topic);
+>>>>>>> 85f90c5a62e12697e7db9f4ce3927e1567510187
         Topic::destroy($topic->id);
         
         return redirect('topics');
