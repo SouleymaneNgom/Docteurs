@@ -15,6 +15,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    @yield('extra-js')
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -54,12 +56,35 @@
                                 </li>
                             @endif
                         @else
+
+                        @unless(auth()->user()->unreadNotifications->isEmpty())
+                        <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ auth()->user()->unreadNotifications->count()}} notification(s) <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+
+                                    @foreach (auth()->user()->unreadNotifications as $notification)
+
+                                    <a href="{{route('topics.showFromNotification', ['topic'=>$notification->data['topicId'], 'notification'=>$notification->id])}}"  class="dropdown-item" >{{ $notification->data['name'] }} a poste un commentaire sur <strong>{{ $notification->data['topicTitle'] }}</strong></a>
+                                    
+                                    @endforeach
+                                   
+
+                                    
+                                </div>
+                            </li>
+                        @endunless
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                                    <a href="{{route('topics.create')}}"  class="dropdown-item" >Creer un Topic</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

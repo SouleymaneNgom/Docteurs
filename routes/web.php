@@ -28,9 +28,18 @@ Route::get('/rendezvous', 'HomeController@index')->name('rendezvous');
 //Route::get('/rendezvous','rendezvousController@showrendezvous');//j'ai ajoute cette ligne pour eviter les erreurs de redirection. Vous le modifiez pour qu'il pointe sur le bon controlleur.
 Auth::routes();
 
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 
 
 Route::get('datepicker','DatepickerController@create');
 Route::post('datepicker','DatepickerController@datePicker');
+
+Route::get('showFromNotification/{topic}/{notification}', 'TopicController@showFromNotification')->name('topics.showFromNotification');
+
+
+Route::resource('topics', 'TopicController'); 
+
+Route::post('/comments/{topic}', 'CommentController@store')->name('comments.store');
+Route::post('/commentReply/{comment}', 'CommentController@storeCommentReply')->name('comments.storeReply');
