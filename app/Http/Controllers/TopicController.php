@@ -4,10 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Topic;
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use Illuminate\Notifications\DatabaseNotification;
-=======
->>>>>>> 85f90c5a62e12697e7db9f4ce3927e1567510187
 
 class TopicController extends Controller
 {
